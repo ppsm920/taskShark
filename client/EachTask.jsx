@@ -1,9 +1,24 @@
-<<<<<<< HEAD
+
 import React, { Component } from 'react'
 
-class EachTask extends Component { 
-   
+
+class EachTask extends Component {
+    
+  render() {
+    // taskCreator(newData)
+console.log("hello this is the final props", this.props.finalData)
+    return (
+    <div className = "individualTicket">
+      <div className = 'detailsTask'>
+          {this.props.finalData.details}
+      </div>
+       <div className = 'personTask'>
+       {this.props.finalData.person}
+      </div>
+   </div>
+
+    );
+  }
 }
-=======
-import React, { Component } from 'react'
->>>>>>> 42882c6a80bf0bd9cfc73ebe27fe92adb3d3c51a
+export default EachTask;
+
